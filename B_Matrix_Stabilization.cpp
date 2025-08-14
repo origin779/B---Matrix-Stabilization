@@ -54,7 +54,7 @@ void solve(int t) {
             }
             else {
                 int mx = max(mat[0][c-1], mat[0][c+1]);
-                temp[0][c]= min(mat[0][c], mx); // <-- fix here
+                temp[0][c]= min(mat[0][c], mx);
             }
         }
     }
@@ -68,7 +68,7 @@ void solve(int t) {
             }
             else {
                 int mx = max(mat[r-1][0], mat[r+1][0]);
-                temp[r][0]= min(mat[r][0], mx); // <-- fix here
+                temp[r][0]= min(mat[r][0], mx);
             }
         }
     }
@@ -120,26 +120,6 @@ void solve(int t) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 signed main() {
   fastio();
 
@@ -150,3 +130,4 @@ signed main() {
 
   return 0;
 }
+
